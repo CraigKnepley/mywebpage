@@ -22,7 +22,7 @@ watcher.on('add', filePath => _processFile(upath.normalize(filePath), 'add'));
 watcher.on('change', filePath => _processFile(upath.normalize(filePath), 'change'));
 watcher.on('ready', () => {
     READY = true;
-    console.log(' READY TO ROLL!');
+    console.log(' READY');
 });
 
 _handleSCSS();

@@ -30,4 +30,73 @@
 // Styling for the development technology icons
 .dev-icons {
     font-size: 3rem;
+
+    .fa-html5 {
+        &:hover {
+            color: $primary;
+        }    
+    }
+
+    .fa-css3-alt {
+        &:hover {
+            color: $primary;
+        } 
+    }
+
+    .fa-js {
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .fa-python {
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .fa-git {
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .fa-github {
+        &:hover {
+            color: $primary;
+        }
+    }
+    .fa-markdown {
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    /* Tooltip initially hidden */
+    .tooltip {
+        visibility: hidden;
+        opacity: 0;
+        width: 120px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+  
+        /* Transition for opacity and visibility */
+        transition: opacity 0.3s ease-in-out;  /* Transition duration and easing */
+        transition-delay: 0.2s;  /* Delay before the transition starts */
+    }
+  
+    /* When hovering over the logo, show the tooltip */
+    &hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+        transition-delay: 0s;  /* Remove the delay when hovering */
+    }
 }
