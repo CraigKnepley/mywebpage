@@ -1,69 +1,15 @@
-# [Start Bootstrap - Resume](https://startbootstrap.com/theme/resume/)
+# MY WEBPAGE
+#### Video Demo:  (https://www.youtube.com/watch?v=3gCJxVJeXgg)
+#### Description:
 
-[Resume](https://startbootstrap.com/theme/resume/) is a resume and CV theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This theme features a fixed sidebar with content sections to build a simple, yet elegant resume.
+My project is a continutation of my Week 8 problem set (HTML, CSS, JavaScript). My project is a personal/professional webpage that showcases my resume, educational background, portfolio, and certifications. The webpage primarily uses Pug (HTML), SCSS, and JavaScript. 
 
-## Preview
+I began by using the skeleton from my Week 8 problem set. The visuals needing sprucing up, so I found a simple, free Bootstrap template online, to which I began making my changes. I decided to use GitHub Codespaces apart from CS50's, so right away had some learning to do re: Git commands and the like. Not only that, but the Bootstrap template employed separate "dist" and "src" folders with which I had to familiarize myself. For instance, I initially made my changes in the "dist" folder, which was a mistake. Every time I attempted to serve my webpage, the "dist" folder re-wrote itself and all of my changes were lost. 
 
-[![Resume Preview](https://assets.startbootstrap.com/img/screenshots/themes/resume.png)](https://startbootstrap.github.io/startbootstrap-resume/)
+Furthermore, to even use the template as intended, I needed to run commands such as "npm build" and "npm start," which necessitated installing Node.js. Suffice it to say, I had barely begun and already had learned quite a bit. In any case, the project began in earnest as I input my professional background, educational background, skills, and certifications. Along the way I added links to my email, LinkedIn, and GitHub. I also looked into Font Awesome icons for the sake of adding visual flair to my "Skills" section. 
 
-**[View Live Preview](https://startbootstrap.github.io/startbootstrap-resume/)**
+Before long, most of the essentials were complete. But what's this? The template includes a bit of JavaScript? It took longer than I'd like to admit to discern that the included JavaScript determined the behavior of the navigational sidebar on mobile devices. In other words, the JavaScript made my webpage responsive. Intrigued and eager to try my hand at some more JavaScript, I added code that made my "Portfolio" and "Skills" sections interactive. The "Skills" section was relatively straightforward: no major issues adding dynamic tooltips on hover. These tooltips brought up a mini-image of the relevant certification for the user to view. The "Portfolio" section, on the other hand, was a challenge. 
 
-## Status
+Originally, my ambition was to use JavaScript + Slick Carousel to add a carousel through which the user could scroll to view my various portfolio pieces/writing samples. Though I could go most of the way, the finishing touches proved unduly problematic. Too many CSS elements conflicted with too many other elements, and I kept ending up backed into a corner: get the carousel to work at the cost of visual consistency with the rest of the webpage, or maintain consistency at the cost of the carousel. In the future, I'd like to spent the time needed to eat my cake and have it too. For the sake of time, however, I ultimately used much simpler CSS and JavaScript to create interactive portfolio images that the user could click to open the respective documents in their entirety. 
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-resume/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-resume.svg)](https://www.npmjs.com/package/startbootstrap-resume)
-
-## Download and Installation
-
-To begin using this template, choose one of the following options to get started:
-
-- [Download the latest release on Start Bootstrap](https://startbootstrap.com/theme/resume/)
-- Install using npm: `npm i startbootstrap-resume`
-- Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-resume.git`
-- [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-resume)
-
-## Usage
-
-### Basic Usage
-
-After downloading, simply edit the HTML and CSS files included with `dist` directory. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
-
-### Advanced Usage
-
-Clone the source files of the theme and navigate into the theme's root directory. Run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `package.json` file to see which scripts are included.
-
-#### npm Scripts
-
-- `npm run build` builds the project - this builds assets, HTML, JS, and CSS into `dist`
-- `npm run build:assets` copies the files in the `src/assets/` directory into `dist`
-- `npm run build:pug` compiles the Pug located in the `src/pug/` directory into `dist`
-- `npm run build:scripts` brings the `src/js/scripts.js` file into `dist`
-- `npm run build:scss` compiles the SCSS files located in the `src/scss/` directory into `dist`
-- `npm run clean` deletes the `dist` directory to prepare for rebuilding the project
-- `npm run start:debug` runs the project in debug mode
-- `npm start` or `npm run start` runs the project, launches a live preview in your default browser, and watches for changes made to files in `src`
-
-You must have npm installed in order to use this build environment.
-
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-resume/issues) here on GitHub or leave a comment on the [theme overview page at Start Bootstrap](https://startbootstrap.com/theme/resume/).
-
-## About
-
-Start Bootstrap is an open source library of free Bootstrap themes and templates. All of the free themes and templates on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-- <https://startbootstrap.com>
-- <https://twitter.com/SBootstrap>
-
-Start Bootstrap was created by and is maintained by **[David Miller](https://davidmiller.io/)**.
-
-- <https://davidmiller.io>
-- <https://twitter.com/davidmillerhere>
-- <https://github.com/davidtmiller>
-
-Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2023 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE) license.
+Ultimately, I plan to use this webpage for the rest of my career. As such, I'm excited to continue work on it, undoubtedly tweaking and fiddling for the rest of my professional life. 
