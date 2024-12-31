@@ -10897,50 +10897,32 @@ p.lead {
   visibility: visible;
 }
 
-#carousel {
-  width: 600px;
-  max-height: 650px;
-  margin: 0 auto;
-  overflow: hidden; /* Hide anything that overflows the container */
-  position: relative;
-}
-
-.carousel-container {
-  display: flex;
-  transition: transform 0.5s ease; /* Smooth transition when moving between images */
-}
-
-.carousel-slide {
-  min-width: 100%;
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-}
-
-.carousel-slide img {
-  width: 100%; /* Makes images fit the container width */
-  height: auto;
-}
-
-.carousel-controls {
-  position: absolute;
-  top: 50%;
+#image-row {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
+  margin: 0 auto; /* Center the section horizontally */
+  overflow: hidden; /* Optional: Prevent overflow issues */
 }
 
-.prev-btn, .next-btn {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
+.image-container {
+  display: flex; /* Line up images in a single row */
+  gap: 10px; /* Optional: Add space between images */
+  justify-content: center; /* Center the row within the container */
+  position: relative; /* Ensure the tooltip is positioned relative to the container */
+}
+
+.image-container img {
+  width: 300px;
+  height: auto; /* Maintain aspect ratio */
+  -o-object-fit: cover;
+     object-fit: cover; /* Ensures images are cropped nicely, if needed */
+  border: 2px solid grey;
+  border-radius: 5px; /* Optional: Slightly rounded corners for the border */
+  padding: 5px; /* Optional: Add some spacing between the image and border */
+  transition: opacity 0.3s ease; /* Optional: Add transition for smoother effect */
+}
+
+.sample {
   cursor: pointer;
-}
-
-.prev-btn:hover, .next-btn:hover {
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 #sideNav {
@@ -11134,8 +11116,8 @@ section.resume-section {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   max-width: 75rem;
 }
 section.resume-section .resume-section-content {

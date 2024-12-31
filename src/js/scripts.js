@@ -35,36 +35,17 @@ document.querySelectorAll('.cert-item').forEach(item => {
     item.style.setProperty('--cert-img', `url(${imgPath})`);
 });
 
-//Carousel functionality
-let currentSlide = 0; // Start with the first slide
+//Open samples
+// Get all elements with the .sample class
+const sampleElements = document.querySelectorAll('.sample');
 
-const slides = document.querySelectorAll('.carousel-slide'); // Select all the slides
-const totalSlides = slides.length;
-
-const prevButton = document.querySelector('.prev-btn');
-const nextButton = document.querySelector('.next-btn');
-
-function showSlide(index) {
-  // Prevent going out of bounds
-  if (index < 0) {
-    currentSlide = totalSlides - 1; // Go to the last slide if going backward past the first
-  } else if (index >= totalSlides) {
-    currentSlide = 0; // Go to the first slide if going forward past the last
-  } else {
-    currentSlide = index;
-  }
-
-  // Move the carousel container to the current slide
-  const offset = -currentSlide * 100; // Shift by 100% per slide
-  document.querySelector('.carousel-container').style.transform = `translateX(${offset}%)`;
-  console.log(`Current slide: ${currentSlide}, Offset: ${offset}%`);
-}
-
-// Event listeners for the buttons
-prevButton.addEventListener('click', () => {
-  showSlide(currentSlide - 1); // Go to the previous slide
-});
-
-nextButton.addEventListener('click', () => {
-  showSlide(currentSlide + 1); // Go to the next slide
+// Loop through each element and add a click event listener
+sampleElements.forEach(element => {
+  element.addEventListener('click', function() {
+    // Get the PDF URL from the data-pdf attribute
+    const pdfUrl = element.getAttribute('data-pdf');
+    
+    // Open the PDF file in a new tab
+    window.open(pdfUrl, '_blank');
+  });
 });

@@ -232,22 +232,12 @@ html(lang='en')
             section#interests.resume-section
                 .resume-section-content
                     h2.mb-5 Portfolio
-                    p
-                        | Want to see some writing samples? The following samples are representative of my previous work, and do not contain proprietary information: 
-            
-            section#carousel
-                 .carousel-container
-                    .carousel-images 
-                        div.carousel-slide
-                             img(src='assets/img/writingsample1.png', alt='Writing Sample 1')
-                        div.carousel-slide
-                            img(src='assets/img/writingsample2.png', alt='Writing Sample 2')
-                        div.carousel-slide
-                            img(src='assets/img/writingsample3.png', alt='Writing Sample 3')
-                    .carousel-controls 
-                        button.prev-btn Prev 
-                        button.next-btn Next
-
+                    div#image-row
+                        .image-container
+                            img.sample(src='assets/img/writingsample1.png', alt='Writing Sample 1', data-pdf='assets/img/sample1.pdf')
+                            img.sample(src='assets/img/writingsample2.png', alt='Writing Sample 2', data-pdf='assets/img/sample2.pdf')
+                            img.sample(src='assets/img/writingsample3.png', alt='Writing Sample 3', data-pdf='assets/img/sample3.pdf')
+            hr.m-0
             // Certifications
             section#awards.resume-section
                 .resume-section-content
