@@ -234,11 +234,19 @@ html(lang='en')
                     h2.mb-5 Portfolio
                     p
                         | Want to see some writing samples? The following samples are representative of my previous work, and do not contain proprietary information: 
-                    ul 
-                        li Sample 1
-                        li Sample 2
-                        li Sample 3
-            hr.m-0
+            
+            section#carousel
+                 .carousel-container
+                    .carousel-images 
+                        div.carousel-slide
+                             img(src='assets/img/writingsample1.png', alt='Writing Sample 1')
+                        div.carousel-slide
+                            img(src='assets/img/writingsample2.png', alt='Writing Sample 2')
+                        div.carousel-slide
+                            img(src='assets/img/writingsample3.png', alt='Writing Sample 3')
+                    .carousel-controls 
+                        button.prev-btn Prev 
+                        button.next-btn Next
 
             // Certifications
             section#awards.resume-section
@@ -266,5 +274,5 @@ html(lang='en')
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
 
-        // Core theme JS
+        //Core Theme JS
         script(src='js/scripts.js')
