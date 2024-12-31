@@ -36,5 +36,6 @@ window.addEventListener('DOMContentLoaded', event => {
 // Dynamically assign CSS variable to data img
 document.querySelectorAll('.cert-item').forEach(item => {
     const imgPath = item.getAttribute('data-img');
+    console.log(`Image path: ${imgPath}`);
     item.style.setProperty('--cert-img', `url(${imgPath})`);
   });
