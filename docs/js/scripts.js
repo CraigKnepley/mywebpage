@@ -5,7 +5,7 @@
 */
 //
 // Scripts
-// 
+//
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -49,7 +49,7 @@ sampleElements.forEach(element => {
   element.addEventListener('click', function() {
     // Get the PDF URL from the data-pdf attribute
     const pdfUrl = element.getAttribute('data-pdf');
-    
+
     // Open the PDF file in a new tab
     window.open(pdfUrl, '_blank');
   });
